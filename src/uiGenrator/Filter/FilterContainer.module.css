@@ -1,0 +1,28 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin-right: 10px;
+  overflow-y: auto;
+  padding: 10px;
+  height: 100%;
+}
+
+.filterTitle {
+  margin-bottom: 15px;
+  height: 20px;
+  font-size: 20px;
+  color: #334d6e;
+}
+
+.filters {
+  flex: 1;
+  overflow-y: auto;
+}
+.filterBtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: 50px;
+}

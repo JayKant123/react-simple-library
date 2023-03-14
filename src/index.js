@@ -1,4 +1,5 @@
 import Comp from "./Comp";
 import Comp2 from "./Comp2";
+import UiGenerator from "./uiGenrator/UiGenerator";
 
-export { Comp, Comp2 };
+export { UiGenerator, Comp, Comp2 };
