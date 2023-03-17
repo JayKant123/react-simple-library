@@ -1,9 +1,8 @@
-import React, { useContext, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import { Table as AntdTable } from 'antd';
-import TableContext from './TableProvider';
-import { renderer } from './TableHelper';
-import useFetch from '../Hooks/useFetch';
+import React, { useEffect } from "react";
+import PropTypes from "prop-types";
+import { Table as AntdTable } from "antd";
+import { renderer } from "./TableHelper";
+import useFetch from "../Hooks/useFetch";
 
 const { Column } = AntdTable;
 
@@ -33,10 +32,10 @@ const TableComponent = ({ columns = [], apiDetails: { url } }) => {
       //   showSizeChanger: false
       // }}
       size="small"
-      scroll={{ x: 'max-content' }}
-      style={{ height: '200px', overflowY: 'auto' }}
+      scroll={{ x: "max-content" }}
+      style={{ height: "200px", overflowY: "auto" }}
     >
-      {columns.map(({ title, dataIndex, key, type = 'default', width }) => (
+      {columns.map(({ title, dataIndex, key, type = "default", width }) => (
         <Column
           key={key}
           title={title}

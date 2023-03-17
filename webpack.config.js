@@ -2,6 +2,7 @@ const path = require("path");
 
 module.exports = {
   target: "web",
+  externalsType: "umd",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",

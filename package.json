@@ -1,9 +1,16 @@
 {
   "name": "react-simple-library",
-  "version": "1.0.0",
+  "version": "1.0.17",
   "description": "",
   "main": "dist/main.js",
   "module": "dist/main.js",
+  "publishConfig": {
+    "registry": "https://nextuple.jfrog.io/artifactory/api/npm/npm-dev-local/"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
